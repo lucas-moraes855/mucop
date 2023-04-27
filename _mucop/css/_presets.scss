@@ -1,0 +1,128 @@
+
+// fontes importadas
+
+@font-face { font-family: 'Unimed Slab Book';     src: url(../fonts/UnimedSlab-Bk.otf) }
+@font-face { font-family: 'Unimed Slab Regular';  src: url(../fonts/UnimedSlab-Rg.otf) }
+@font-face { font-family: 'Unimed Slab SemiBold'; src: url(../fonts/UnimedSlab-Sb.otf) }
+@font-face { font-family: 'Unimed Slab Bold';     src: url(../fonts/UnimedSlab-Bd.otf) }
+
+
+// -----------------
+// --- VARIÁVEIS ---
+// -----------------
+
+:root {
+
+    
+    // FONTES    
+    
+
+    --unislab-300: 'Unimed Slab Book';
+    --unislab-400: 'Unimed Slab Regular';
+    --unislab-500: 'Unimed Slab SemiBold';
+    --unislab-600: 'Unimed Slab Bold';
+
+
+    // --------------------------------------------------
+
+
+    // CORES
+
+    
+        // Principal
+        --pri-1: #00995D;
+        --pri-1-hv: #008550;
+
+        // Destaques
+        --dst-1: #B2D14B;
+        --dst-1-hv: #9CC125;
+
+        --dst-2: #F37920;
+        --dst-2-hv: #F56600;
+
+        // Suporte
+        --sup-1: #004D49;
+
+        // Apoio
+        --apo-1: #D1A394;
+        --apo-2: #F0CECE;
+        --apo-3: #EBE3DA;
+        --apo-4: #FFE196;
+        --apo-5: #CFE3BC;
+        --apo-6: #A6DADE;
+
+        // Básicas
+        --bas-1: #000000;
+        --bas-2: #808080;
+        --bas-3: #989898;
+        --bas-4: #CCCCCC;
+        --bas-5: #E4E4E4;
+        --bas-6: #F2F2F2;
+        --bas-7: #FFFFFF;
+}
+
+
+// ---------------
+// --- PRESETS ---
+// ---------------
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button {
+    font-family: var(--unislab-500);
+    border: none;
+}
+
+input, textarea {
+    font-family: var(--unislab-500);
+    border: none;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: var(--unislab-500), 'Trebuchet MS', sans-serif;
+    letter-spacing: -1px;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: var(--unislab-500), 'Trebuchet MS', sans-serif;    
+    letter-spacing: -1px;
+}
+
+h3 {
+    font-size: 24px;
+    font-family: var(--unislab-500), 'Trebuchet MS', sans-serif;
+    letter-spacing: -1px;
+}
+
+h4 {
+    font-size: 20px;
+    font-family: var(--unislab-500), 'Trebuchet MS', sans-serif;
+    letter-spacing: -1px;
+}
+
+h5 {
+    font-size: 18px;
+    font-family: var(--unislab-500), 'Trebuchet MS', sans-serif;
+    letter-spacing: -1px;
+}
+
+h6 {
+    font-size: 16px;
+    font-family: var(--unislab-500), 'Trebuchet MS', sans-serif;
+    letter-spacing: -1px;
+}
+
+label {
+    font-family: var(--unislab-300);
+    font-size: 14px;
+}

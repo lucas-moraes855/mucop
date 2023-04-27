@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mucop Framework</title>
+    <link rel="stylesheet" href="_mucop/css/mucop.min.css">
+</head>
+
+<body style="background-color: #F9F9F9; padding: 5%">
+
+    <!--
+        Títulos e parágrafo
+    -->
+
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br>
+        Possimus, consequatur laboriosam asperiores iste iusto id<br>
+        cumque voluptatem ea dolor sint. Aliquam architecto quibusdam<br>
+        ipsa obcaecati tempore totam maiores ipsam dolorem.</p><br>
+
+    <label>Label</label>
+
+    <br><br>
+    <hr><br>
+
+
+    <!--
+        ------------------
+        ----- BUTTON -----
+        ------------------
+    -->
+
+
+    <!--
+        BUTTON > Cor de fundo simples
+    -->
+
+    <button class="mcp-btn">Button</button>
+
+    <br><br>
+
+
+    <!--
+        BUTTON > Cor de fundo e ícone a esquerda
+    -->
+
+    <button class="mcp-btn ic-left"><i class="ph-caret-circle-left"></i><span>Button</span></button>
+
+    <br><br>
+
+    <!--
+        BUTTON > Cor de fundo e ícone a direita
+    -->
+
+    <button class="mcp-btn ic-right"><span>Button</span><i class="ph-caret-circle-right"></i></button>
+
+    <br><br>
+
+    <!--
+        BUTTON > Cor de fundo e apenas ícone
+    -->
+
+    <button class="mcp-btn ic-only"><i class="ph-plus"></i></button>
+
+    <br><br>
+
+    <!--
+        BUTTON > Transparente simples
+    -->
+
+    <button class="mcp-btn no-bg">Button</button>
+
+    <br><br>
+
+    <!--
+        BUTTON > Transparente simples e ícone a esquerda
+    -->
+
+    <button class="mcp-btn ic-left no-bg"><i class="ph-arrow-left"></i><span>Button</span></button>
+
+    <br><br>
+
+    <!--
+        BUTTON > Transparente simples e ícone a direita
+    -->
+
+    <button class="mcp-btn ic-right no-bg"><span>Button</span><i class="ph-arrow-right"></i></button>
+
+    <br><br>
+
+    <!--
+        BUTTON > Transparente e apenas ícone
+    -->
+
+    <button class="mcp-btn ic-only no-bg"><i class="ph-trash"></i></button>
+
+    <br>
+    <hr><br>
+
+
+    <!--
+        --------------------------
+        ----- INPUT CHECKBOX -----
+        --------------------------
+    -->
+
+
+    <!--
+        INPUT CHECKBOX > Individual
+    -->
+
+    <span class="mcp-input-checkbox">
+        <input type="checkbox" name="only_check"><span><i class="ph-check-bold"></i></span>
+    </span>
+
+    <br>
+
+    <!--
+        INPUT CHECKBOX > Em bloco
+    -->
+
+    <ul class="mcp-input-checkbox-list block">
+        <li>
+            <span class="mcp-input-checkbox">
+                <input type="checkbox" name="check_block" id="check_block_1"><span><i class="ph-check-bold"></i></span>
+            </span>
+            <label for="check_block_1">Item 1</label>
+        </li>
+        <li>
+            <span class="mcp-input-checkbox">
+                <input type="checkbox" name="check_block" id="check_block_2"><span><i class="ph-check-bold"></i></span>
+            </span>
+            <label for="check_block_2">Item 2</label>
+        </li>
+        <li>
+            <span class="mcp-input-checkbox">
+                <input type="checkbox" name="check_block" id="check_block_3"><span><i class="ph-check-bold"></i></span>
+            </span>
+            <label for="check_block_3">Item 3</label>
+        </li>
+    </ul>
+
+    <br>
+
+    <!--
+        INPUT CHECKBOX > Em linha
+    -->
+
+    <ul class="mcp-input-checkbox-list inline">
+        <li>
+            <span class="mcp-input-checkbox">
+                <input type="checkbox" name="check_inline" id="check_inline_4"><span><i
+                        class="ph-check-bold"></i></span>
+            </span>
+            <label for="check_inline_4">Item 1</label>
+        </li>
+        <li>
+            <span class="mcp-input-checkbox">
+                <input type="checkbox" name="check_inline" id="check_inline_5"><span><i
+                        class="ph-check-bold"></i></span>
+            </span>
+            <label for="check_inline_5">Item 2</label>
+        </li>
+        <li>
+            <span class="mcp-input-checkbox">
+                <input type="checkbox" name="check_inline" id="check_inline_6"><span><i
+                        class="ph-check-bold"></i></span>
+            </span>
+            <label for="check_inline_6">Item 3</label>
+        </li>
+    </ul>
+
+    <br>
+    <hr><br>
+
+
+    <!--
+        -----------------------
+        ----- INPUT COLOR -----
+        -----------------------
+    -->
+
+
+    <!--
+        INPUT COLOR > Padrão
+    -->
+
+    <span class="mcp-input color with-icon">
+        <input type="color" name="color">
+        <span class="field"><i class="ph-paint-brush"></i><span class="bg"></span></span>
+    </span>
+
+    <br><br>
+    <hr><br>
+
+
+    <!--
+        ----------------------
+        ----- INPUT DATE -----
+        ----------------------
+    -->
+
+
+    <!--
+        INPUT DATE > Padrão
+    -->
+
+    <span class="mcp-input date">
+        <input type="date" name="date">
+        <i class="ph-calendar"></i>
+    </span>
+
+    <br><br>
+    <hr><br>
+
+
+    <!--
+        --------------------------
+        ----- INPUT DATETIME -----
+        --------------------------
+    -->
+
+
+    <!--
+        INPUT DATETIME > Padrão
+    -->
+
+    <span class="mcp-input datetime">
+        <input type="datetime-local" name="datetime">
+        <i class="ph-calendar-plus"></i>
+    </span>
+
+    <br><br>
+    <hr><br>
+
+
+    <!--
+        -----------------------
+        ----- INPUT EMAIL -----
+        -----------------------
+    -->
+
+
+    <!--
+        INPUT EMAIL > Sem ícone
+    -->
+
+    <span class="mcp-input">
+        <input type="email" name="email" placeholder="Insira seu email">
+    </span>
+
+    <br><br>
+
+    <!--
+        INPUT EMAIL > Com ícone
+    -->
+
+    <span class="mcp-input with-icon">
+        <i class="ph-envelope-simple"></i>
+        <input type="email" name="email" placeholder="Insira seu email">
+    </span>
+
+    <br><br>
+    <hr><br>
+
+
+    <!--
+        ----------------------
+        ----- INPUT FILE -----
+        ----------------------
+    -->
+
+
+    <!--
+        INPUT FILE > Padrão
+    -->
+
+    <span class="mcp-input-file">
+        <input type="file" name="file" multiple="">
+        <span class="btn-file">
+            <i class="ph-cloud-arrow-up"></i>
+            <span class="text">Selecione um arquivo</span>
+        </span>
+    </span>
+
+    <br><br>
+    <hr><br>
+
+
+    <!--
+        -----------------------
+        ----- INPUT MONTH -----
+        -----------------------
+    -->
+
+
+    <!--
+        INPUT MONTH > Padrão
+    -->
+
+    <span class="mcp-input month">
+        <input type="month" name="month">
+        <i class="ph-calendar-plus"></i>
+    </span>
+
+    <br><br>
+    <hr><br>
+
+
+    <!--
+        ------------------------
+        ----- INPUT NUMBER -----
+        ------------------------
+    -->
+
+
+    <!--
+        INPUT NUMBER > Padrão
+    -->
+
+    <span class="mcp-input number">
+        <input type="number" name="number" placeholder="0">
+        <span class="btn-up"><i class="ph-caret-up-bold"></i></span>
+        <span class="btn-down"><i class="ph-caret-down-bold"></i></span>
+    </span>
+
+    <br><br>
+    <hr><br>
+
+
+    <!--
+        --------------------------
+        ----- INPUT PASSWORD -----
+        --------------------------
+    -->
+
+
+    <!--
+        INPUT PASSWORD > Sem ícone
+    -->
+
+    <span class="mcp-input pass">
+        <input type="password" name="password" placeholder="Insira sua senha">
+    </span>
+
+    <br><br>
+
+    <!--
+        INPUT PASSWORD > Com ícone
+    -->
+
+    <span class="mcp-input pass with-icon">
+        <i class="ph-lock-key"></i>
+        <input type="password" name="password" placeholder="Insira sua senha">
+    </span>
+
+    <br><br>
+    <hr><br>
+
+
+    <!--
+        -----------------------
+        ----- INPUT RADIO -----
+        -----------------------
+    -->
+
+
+    <!--
+        INPUT RADIO > Em bloco
+    -->
+
+    <ul class="mcp-input-radio-list block">
+        <li>
+            <span class="mcp-input-radio">
+                <input type="radio" name="radio_block" id="radio_block_1"><span></span>
+            </span>
+            <label for="radio_block_1">Item 1</label>
+        </li>
+        <li>
+            <span class="mcp-input-radio">
+                <input type="radio" name="radio_block" id="radio_block_2"><span></span>
+            </span>
+            <label for="radio_block_2">Item 2</label>
+        </li>
+        <li>
+            <span class="mcp-input-radio">
+                <input type="radio" name="radio_block" id="radio_block_3"><span></span>
+            </span>
+            <label for="radio_block_3">Item 3</label>
+        </li>
+    </ul>
+
+    <br>
+
+    <!--
+        INPUT RADIO > Em linha
+    -->
+
+    <ul class="mcp-input-radio-list inline">
+        <li>
+            <span class="mcp-input-radio">
+                <input type="radio" name="radio_inline" id="radio_inline_1"><span></span>
+            </span>
+            <label for="radio_inline_1">Item 1</label>
+        </li>
+        <li>
+            <span class="mcp-input-radio">
+                <input type="radio" name="radio_inline" id="radio_inline_2"><span></span>
+            </span>
+            <label for="radio_inline_2">Item 2</label>
+        </li>
+        <li>
+            <span class="mcp-input-radio">
+                <input type="radio" name="radio_inline" id="radio_inline_3"><span></span>
+            </span>
+            <label for="radio_inline_3">Item 3</label>
+        </li>
+    </ul>
+
+    <br>
+    <hr><br>
+
+
+    <!--
+        ------------------------
+        ----- INPUT SEARCH -----
+        ------------------------
+    -->
+
+
+    <!--
+        INPUT SEARCH > Sem ícone
+    -->
+
+    <span class="mcp-input">
+        <input type="search" name="search" placeholder="Pesquisar...">
+    </span>
+
+    <br><br>
+
+    <!--
+        INPUT SEARCH > Com ícone
+    -->
+
+    <span class="mcp-input with-icon">
+        <i class="ph-magnifying-glass"></i>
+        <input type="search" name="search" placeholder="Pesquisar...">
+    </span>
+
+    <br><br>
+    <hr><br>
+
+
+    <!--
+        ---------------------
+        ----- INPUT TEL -----
+        ---------------------
+    -->
+
+
+    <!--
+        INPUT TEL > Sem ícone
+    -->
+
+    <span class="mcp-input">
+        <input type="tel" name="tel" placeholder="Informe seu telefone...">
+    </span>
+
+    <br><br>
+
+    <!--
+        INPUT TEL > Com ícone
+    -->
+
+    <span class="mcp-input with-icon">
+        <i class="ph-phone"></i>
+        <input type="tel" name="tel" placeholder="Informe seu telefone...">
+    </span>
+
+    <br><br>
+    <hr><br>
+
+
+    <!--
+        ----------------------
+        ----- INPUT TEXT -----
+        ----------------------
+    -->
+
+
+    <!--
+        INPUT TEXT > Sem ícone
+    -->
+
+    <span class="mcp-input">
+        <input type="text" name="text" placeholder="Informe seu texto...">
+    </span>
+
+    <br><br>
+
+    <!--
+        INPUT TEXT > Com ícone
+    -->
+
+    <span class="mcp-input with-icon">
+        <i class="ph-textbox"></i>
+        <input type="text" name="text" placeholder="Informe seu texto...">
+    </span>
+
+    <br><br>
+    <hr><br>
+
+
+    <!--
+        ----------------------
+        ----- INPUT TIME -----
+        ----------------------
+    -->
+
+
+    <!--
+        INPUT TIME > Padrão
+    -->
+
+    <span class="mcp-input time">
+        <input type="time" name="time">
+        <i class="ph-timer"></i>
+    </span>
+
+    <br><br>
+    <hr><br>
+
+
+    <!--
+        ---------------------
+        ----- INPUT URL -----
+        ---------------------
+    -->
+
+
+    <!--
+        INPUT URL > Sem ícone
+    -->
+
+    <span class="mcp-input">
+        <input type="url" name="url" placeholder="Informe sua url...">
+    </span>
+
+    <br><br>
+
+    <!--
+        INPUT URL > Com ícone
+    -->
+
+    <span class="mcp-input with-icon">
+        <i class="ph-link"></i>
+        <input type="url" name="url" placeholder="Informe sua url...">
+    </span>
+
+    <br><br>
+    <hr><br>
+
+
+    <!--
+        ----------------------
+        ----- INPUT WEEK -----
+        ----------------------
+    -->
+
+
+    <!--
+        INPUT WEEK > Padrão
+    -->
+
+    <span class="mcp-input week">
+        <input type="week" name="week">
+        <i class="ph-calendar-plus"></i>
+    </span>
+
+    <br><br>
+    <hr><br>
+
+
+    <!--
+        ----------------
+        ----- LINK -----
+        ----------------
+    -->
+
+
+    <!--
+        LINK > Cor de fundo simples
+    -->
+
+    <a href="#" class="mcp-link">Link</a>
+
+    <br><br>
+
+    <!--
+        LINK > Cor de fundo simples e ícone a esquerda
+    -->
+
+    <a href="#" class="mcp-link ic-left"><i class="ph-arrow-circle-left"></i><span>Link</span></a>
+
+    <br><br>
+
+    <!--
+        LINK > Cor de fundo simples e ícone a direita
+    -->
+
+    <a href="#" class="mcp-link ic-right"><span>Link</span><i class="ph-arrow-circle-right"></i></a>
+
+    <br><br>
+
+    <!--
+        LINK > Cor de fundo e apenas ícone
+    -->
+
+    <a class="mcp-link ic-only"><i class="ph-plus"></i></a>
+
+    <br><br>
+
+    <!--
+        LINK > Transparente simples
+    -->
+
+    <a class="mcp-link no-bg">Link</a>
+
+    <br><br>
+
+    <!--
+        LINK > Transparente simples e ícone a esquerda
+    -->
+
+    <a class="mcp-link ic-left no-bg"><i class="ph-arrow-left"></i><span>Link</span></a>
+
+    <br><br>
+
+    <!--
+        LINK > Transparente simples e ícone a direita
+    -->
+
+    <a class="mcp-link ic-right no-bg"><span>Link</span><i class="ph-arrow-right"></i></a>
+
+    <br><br>
+
+    <!--
+        LINK > Transparente e apenas ícone
+    -->
+
+    <a class="mcp-link ic-only no-bg"><i class="ph-trash"></i></a>
+
+
+    <br><br>
+    <hr><br>
+
+
+    <!--
+        -------------------
+        ----- MESSAGE -----
+        -------------------
+    -->
+
+
+    <!--
+        MESSAGE > Padrão
+    -->
+
+    <div class="mcp-message">
+        <span class="icon"><i class="ph-info-fill"></i></span>
+        <span class="message">Veja abaixo suas variações e suas respectivas variáveis para utilização.</span>
+        <span class="close"><i class="ph-x-bold"></i></span>
+    </div>
+
+    <br>
+
+    <!--
+        MESSAGE > Aviso
+    -->
+
+    <div class="mcp-message warning">
+        <span class="icon"><i class="ph-warning-fill"></i></span>
+        <span class="message">Veja abaixo suas variações e suas respectivas variáveis para utilização.</span>
+        <span class="close"><i class="ph-x-bold"></i></span>
+    </div>
+
+    <br>
+
+    <!--
+        MESSAGE > Sucesso
+    -->
+
+    <div class="mcp-message success">
+        <span class="icon"><i class="ph-check-circle-fill"></i></span>
+        <span class="message">Veja abaixo suas variações e suas respectivas variáveis para utilização.</span>
+        <span class="close"><i class="ph-x-bold"></i></span>
+    </div>
+
+    <br>
+
+    <!--
+        MESSAGE > Erro
+    -->
+
+    <div class="mcp-message error">
+        <span class="icon"><i class="ph-warning-octagon-fill"></i></span>
+        <span class="message">Veja abaixo suas variações e suas respectivas variáveis para utilização.</span>
+        <span class="close"><i class="ph-x-bold"></i></span>
+    </div>
+
+    <br>
+
+    <!--
+        MESSAGE > Informação
+    -->
+
+    <div class="mcp-message info">
+        <span class="icon"><i class="ph-info-fill"></i></span>
+        <span class="message">Veja abaixo suas variações e suas respectivas variáveis para utilização.</span>
+        <span class="close"><i class="ph-x-bold"></i></span>
+    </div>
+
+
+    <br><br>
+    <hr><br>
+
+
+    <!--
+        ------------------
+        ----- SELECT -----
+        ------------------
+    -->
+
+
+    <!--
+        SELECT > Padrão
+    -->
+
+    <span class="mcp-select">
+        <select>
+            <option>Selecione uma opção</option>
+            <option>Opção 1</option>
+            <option>Opção 2</option>
+            <option>Opção 3</option>
+        </select><span></span>
+        <span class="field">
+            <span class="value">Selecione uma opção</span>
+            <i class="ph-caret-down-bold"></i>
+        </span>
+    </span>
+
+    <br><br>
+    <hr><br>
+
+
+    <!--
+        -------------------
+        ----- SPINNER -----
+        -------------------
+    -->
+
+
+    <!--
+        SPINNER > Padrão
+    -->
+
+    <span class="mcp-spinner"></span>
+
+    <br><br>
+    <hr><br>
+
+
+    <!--
+        -----------------
+        ----- TABLE -----
+        -----------------
+    -->
+
+    <table class="mcp-table">
+        <thead>
+            <tr>
+                <td>Coluna 1</td>
+                <td>Coluna 2</td>
+                <td>Coluna 3</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Coluna 1</td>
+                <td>Coluna 2</td>
+                <td>Coluna 3</td>
+            </tr>
+            <tr>
+                <td>Coluna 1</td>
+                <td>Coluna 2</td>
+                <td>Coluna 3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+                <td>Coluna 1</td>
+                <td>Coluna 2</td>
+                <td>Coluna 3</td>
+        </tfoot>
+    </table>
+
+    <br><br>
+    <hr><br>
+
+
+    <!--
+        --------------------
+        ----- TEXTAREA -----
+        --------------------
+    -->
+
+
+    <!--
+        TEXTAREA > Padrão
+    -->
+
+    <textarea class="mcp-textarea" placeholder="Informe uma descrição"></textarea>
+
+
+    <br><br>
+    <hr><br>
+
+
+    <!--
+        ------------------
+        ----- TOGGLE -----
+        ------------------
+    -->
+
+
+    <!--
+        TOGGLE > Padrão
+    -->
+
+    <span class="mcp-toggle">
+        <input type="checkbox" name="checkbox"><span></span>
+    </span>
+
+
+    <!-------------------------------------------------------------------->
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script src="_mucop/js/mucop.min.js"></script>
+
+</body>
+
+</html>
