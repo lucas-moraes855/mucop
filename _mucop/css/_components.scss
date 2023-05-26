@@ -929,10 +929,7 @@
     tr {        
         td {
             border: none;            
-            font-family: var(--unislab-500);
-            &:last-child {
-                width: 250px;
-            }
+            font-family: var(--unislab-500);            
         }
     }   
 
