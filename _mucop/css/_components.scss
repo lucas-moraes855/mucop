@@ -945,12 +945,19 @@
         border-bottom: 1px solid var(--bas-5);
     }
 
+    tbody tr:last-child td {
+        border-bottom: none;
+    }
     tbody td {        
         font-weight: bold;
         font-size: 13px;
         font-family: var(--unislab-300);
         background-color: var(--bas-7);
         padding: 20px;
+    }
+
+    tfoot td {
+        border-top: 1px solid var(--bas-5);
     }
 }
 
