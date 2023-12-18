@@ -3,7 +3,8 @@
 
 /* PRESETS */
 
-html, body {
+html,
+body {
     width: 100vw;
     height: 100vh;
     margin: 0;
@@ -28,7 +29,7 @@ html, body {
     background-color: var(--bas-5);
     border-radius: 5px;
     display: inline-block;
-    padding: 2px 4px;    
+    padding: 2px 4px;
 }
 
 .tag.no-bg {
@@ -107,7 +108,7 @@ html, body {
 
 /* SIDEBAR */
 
-.root > .sidebar {
+.root>.sidebar {
     width: 270px;
     background-color: var(--bas-6);
     display: flex;
@@ -115,18 +116,18 @@ html, body {
 }
 
 
-.sidebar > header {
+.sidebar>header {
     width: inherit;
     padding: 50px 30px 30px 30px;
 }
 
-.sidebar > header.show_shadow {
-    box-shadow: 0px 1px 1px rgba(0,0,0,.1);
-    -webkit-box-shadow: 0px 1px 1px rgba(0,0,0,.1);
-    -moz-box-shadow: 0px 1px 1px rgba(0,0,0,.1);
+.sidebar>header.show_shadow {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, .1);
+    -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, .1);
 }
 
-.sidebar > header .logo {
+.sidebar>header .logo {
     text-decoration: none;
     display: inline-flex;
     align-items: center;
@@ -144,7 +145,7 @@ html, body {
     color: var(--bas-1);
 }
 
-.sidebar > nav {
+.sidebar>nav {
     width: inherit;
     overflow-x: hidden;
     overflow-y: auto;
@@ -154,16 +155,16 @@ html, body {
     flex-direction: column;
 }
 
-.sidebar > nav::-webkit-scrollbar {
+.sidebar>nav::-webkit-scrollbar {
     width: 6px;
     height: 6px;
 }
 
-.sidebar > nav::-webkit-scrollbar-track {
+.sidebar>nav::-webkit-scrollbar-track {
     background-color: var(--bas-6);
 }
 
-.sidebar > nav::-webkit-scrollbar-thumb {
+.sidebar>nav::-webkit-scrollbar-thumb {
     background-color: var(--bas-4);
     height: 30%;
 }
@@ -174,7 +175,7 @@ html, body {
     gap: 20px;
 }
 
-.sidebar div > p {
+.sidebar div>p {
     font-family: var(--unislab-400);
     font-size: 12px;
     color: var(--bas-3);
@@ -183,13 +184,13 @@ html, body {
     padding-left: 30px;
 }
 
-.sidebar div > ul {
+.sidebar div>ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.sidebar div > ul a {
+.sidebar div>ul a {
     text-decoration: none;
     display: flex;
     gap: 10px;
@@ -200,18 +201,18 @@ html, body {
     -moz-transition: 0.2s;
 }
 
-.sidebar div > ul a:hover {
+.sidebar div>ul a:hover {
     background-color: var(--bas-5);
 }
 
-.sidebar ul a > i {
+.sidebar ul a>i {
     font-size: 18px;
     color: var(--pri-1);
 }
 
 /* MAIN */
 
-.root > main {
+.root>main {
     flex-grow: 1;
     background-color: var(--bas-7);
     overflow-x: hidden;
@@ -219,27 +220,27 @@ html, body {
     padding: 50px;
 }
 
-.root > main h1 {
+.root>main h1 {
     color: var(--bas-4);
     margin: 0;
 }
 
-.root > main h2 {
+.root>main h2 {
     color: var(--pri-1);
     margin: 0;
 }
 
-.root > main h4 {
+.root>main h4 {
     color: var(--bas-1);
     margin: 0;
 }
 
-.root > main .box_code {
+.root>main .box_code {
     width: 100%;
     position: relative;
 }
 
-.root > main .box_code .code {
+.root>main .box_code .code {
     padding: 25px;
     background-color: #F3F3F3;
     font-family: 'Source Code Pro';
@@ -247,18 +248,18 @@ html, body {
     white-space: pre;
 }
 
-.root > main .box_code .code.only {
+.root>main .box_code .code.only {
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
 }
 
-.root > main .box_code .btn_copy {
+.root>main .box_code .btn_copy {
     position: absolute;
     top: 12px;
     right: 12px;
     cursor: pointer;
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(0, 0, 0, .4);
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -269,31 +270,31 @@ html, body {
     opacity: .9;
 }
 
-.root > main .box_code .btn_copy i {
+.root>main .box_code .btn_copy i {
     color: var(--bas-7);
 }
 
-.root > main .box_code .btn_copy:hover {
+.root>main .box_code .btn_copy:hover {
     opacity: 1;
 }
 
-.root > main section {
+.root>main section {
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding-bottom: 20px;
 }
 
-.root > main .content {
+.root>main .content {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
 
-/* MAIN > GET STARTED > Iniciar */
+/* MAIN > Iniciar */
 
-.main_get_started > header {
+.main_get_started>header {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -301,18 +302,15 @@ html, body {
 }
 
 
-/* MAIN > GET STARTED > Sobre */
+/* MAIN > Sobre */
 
-.main_about {
-
-}
+/*.main_about {}*/
 
 
-/* MAIN > GET STARTED > Download e Instalação */
+/* MAIN > Download e Instalação */
 
-.main_download_setup {
+/*.main_download_setup {}*/
 
-}
 
 .main_download_setup .box_btn_download {
     padding: 20px 0 30px 0;
@@ -338,12 +336,12 @@ html, body {
     background-color: var(--pri-1-hv);
 }
 
-.main_download_setup .btn_download > i {
+.main_download_setup .btn_download>i {
     font-size: 30px;
     color: var(--bas-7);
 }
 
-.main_download_setup .btn_download > span {
+.main_download_setup .btn_download>span {
     display: flex;
     flex-direction: column;
 }
@@ -360,11 +358,10 @@ html, body {
 }
 
 
-/* MAIN > GET STARTED > Tipografia */
+/* MAIN > Tipografia */
 
-.main_typography {
+/*.main_typography {}*/
 
-}
 
 .main_typography .content {
     padding-top: 20px;
@@ -389,57 +386,57 @@ html, body {
     -moz-border-radius: 10px;
 }
 
-.main_typography .font > .text {
+.main_typography .font>.text {
     font-size: 36px;
 }
 
-.main_typography .font > .text.one {
+.main_typography .font>.text.one {
     font-family: var(--unislab-300);
 }
 
-.main_typography .font > .text.two {
+.main_typography .font>.text.two {
     font-family: var(--unislab-400);
 }
 
-.main_typography .font > .text.three {
+.main_typography .font>.text.three {
     font-family: var(--unislab-500);
 }
 
-.main_typography .font > .text.four {
+.main_typography .font>.text.four {
     font-family: var(--unislab-600);
 }
 
-.main_typography .font > .var {
+.main_typography .font>.var {
     font-family: 'Source Code Pro';
     font-size: 14px;
 }
 
 
-/* MAIN > GET STARTED > Cores */
+/* MAIN > Cores */
 
+/*.main_colors {}*/
 
-.main_colors {
+.main_colors .group_var {
+    display: flex;
+    gap: 5px;
 
+    .color {
+        width: 17px;
+        height: 17px;
+        display: block;
+        border-radius: 2px;
+        background-color: var(--bas-6);
+    }
+
+    .var {
+        font-family: 'Source Code Pro';
+    }
 }
 
-.main_colors .color {
-    width: 17px;
-    height: 17px;
-    display: block;
-    border-radius: 2px;
-    background-color: var(--bas-6);
-}
 
-.main_colors .var {
-    font-family: 'Source Code Pro';
-}
+/* MAIN > Ícones */
 
-
-/* MAIN > GET STARTED > Ícones */
-
-.main_icons {
-
-}
+/*.main_icons {}*/
 
 .main_icons iframe {
     width: 100%;
@@ -448,14 +445,14 @@ html, body {
     border-radius: 10px;
 }
 
-.main_icons p > a {
+.main_icons p>a {
     color: var(--pri-1);
 }
 
 
-/* MAIN > COMPONENTS */
+/* MAIN > Componentes */
 
-.main_components > header {
+.main_components>header {
     display: flex;
     flex-direction: column;
     gap: 10px;
