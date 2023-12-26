@@ -13,7 +13,9 @@
     i {
         font-size: 24px;        
         color: var(--bas-4);
-        margin-left: 10px;
+        margin-left: 10px;        
+        position: relative;
+        z-index: 1;
     }
     input {
         width: inherit;
@@ -23,10 +25,13 @@
         border-radius: 5px;
         border: 1px solid var(--bas-4);
         background-color: transparent;
-        padding-left: 10px;
-        font-size: 14px;        
+        padding-left: 10px;        
         &:focus {
             border-color: var(--bas-3);
+        }
+        &:disabled {
+            background-color: var(--bas-6);
+            color: var(--bas-3);            
         }
     }
     input::placeholder {
@@ -45,6 +50,7 @@
     width: 100% !important;
 }
 
+
 // --------------------------------------------------
 
 
@@ -60,9 +66,9 @@
 
 .mcp-btn {
     display: inline-flex;
-    align-items: center;
-    font-size: 14px;
-    font-family: var(--unislab-500);
+    justify-content: center;
+    align-items: center;    
+    font-family: var(--unislab-400);    
     padding: 11px 16px;
     border-radius: 5px;
     background-color: var(--bas-7);
@@ -70,11 +76,19 @@
     transition: .2s;
     cursor: pointer;
     i {
-        font-size: 18px;        
+        font-size: 18px;
     }
     &:hover {
         background-color: var(--bas-5);
     }
+    &:disabled {
+        opacity: .6;
+        cursor: default;
+    }
+}
+
+.mcp-btn.flex {
+    width: 100%;    
 }
 
 // BUTTON > Cor de fundo e ícone a esquerda
@@ -188,8 +202,7 @@
         gap: 5px;        
     }
     label {        
-        cursor: pointer;
-        font-family: var(--unislab-500);
+        cursor: pointer;        
         color: var(--bas-2);
     }
 }
@@ -352,7 +365,8 @@
 
 // INPUT FILE > Padrão
 
-.mcp-input-file {    
+.mcp-input-file {
+    width: max-content;  
     height: 40px; 
     display: inline-flex;           
     border-radius: 5px;
@@ -373,10 +387,11 @@
         display: flex;
         align-items: center;
         padding: 11px;        
-        font-size: 14px;
-        font-family: var(--unislab-500);
+        font-size: 13px;
+        font-family: var(--unislab-400);
+        font-weight: bold;
         i {
-            font-size: 24px;
+            font-size: 18px;
             margin-right: 6px;
         }
     }
@@ -484,7 +499,7 @@
         letter-spacing: 4px;        
     }
     input::placeholder {
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 
@@ -549,8 +564,7 @@
         gap: 5px;
     }
     label {        
-        cursor: pointer;
-        font-family: var(--unislab-500);
+        cursor: pointer;        
         color: var(--bas-2);
     }
 }
@@ -692,9 +706,11 @@
 
 .mcp-link {
     display: inline-flex;
+    justify-content: center;
     text-decoration: none;
-    font-family: var(--unislab-500);
-    font-size: 14px;
+    font-family: var(--unislab-400);
+    font-size: 13px;
+    font-weight: bold;
     padding: 11px 16px;
     border-radius: 5px;
     background-color: var(--bas-7);
@@ -708,6 +724,10 @@
     &:hover {
         background-color: var(--bas-5);
     }
+}
+
+.mcp-link.flex {
+    width: 100%;
 }
 
 // LINK > Cor de fundo e ícone a esquerda
@@ -810,28 +830,32 @@
 // MESSAGE > Aviso
 
 .mcp-message.warning {
-    background-color: var(--apo-4);
+    background-color: #FFFCF5;
+    border: 1px solid #A78225;
     color: #A78225;
 }
 
 // MESSAGE > Sucesso
 
 .mcp-message.success {
-    background-color: var(--apo-5);
+    background-color: #FAFFF5;
+    border: 1px solid #6F954B;
     color: #6F954B;
 }
 
 // MESSAGE > Erro
 
 .mcp-message.error {
-    background-color: var(--apo-2);
+    background-color: #FAF2F2;
+    border: 1px solid #A36C6C;
     color: #A36C6C;
 }
 
 // MESSAGE > Informação
 
 .mcp-message.info {
-    background-color: var(--apo-6);
+    background-color: #F5FEFF;
+    border: 1px solid #3E888E;
     color: #3E888E;
 }
 
@@ -856,7 +880,7 @@
         height: inherit;
         position: absolute;
         top: 0; left: 0;
-        font-size: 14px;
+        font-size: 13px;
         border: 1px solid var(--bas-4);
         background-color: transparent;
         padding-left: 10px;
@@ -864,6 +888,10 @@
     }
     select:focus ~ .field {
         border-color: var(--bas-3);
+    }
+    select:disabled ~ .field {
+        background-color: var(--bas-6);
+        color: var(--bas-3);
     }
     .field {
         width: inherit;
@@ -875,8 +903,9 @@
         align-items: center;
         padding: 0 10px;
         .value {
-            font-size: 14px;
-            font-family: var(--unislab-500);
+            font-size: 13px;
+            font-family: var(--unislab-300);
+            font-weight: bold;
             color: var(--bas-4);
         }
         i {
@@ -920,64 +949,49 @@
 // -----------------
 
 .mcp-table {
-    width: 768px;
+    text-align: left;
     border: 1px solid var(--bas-5);
     border-radius: 5px;
-    border-spacing: 0px;
-    overflow: hidden;
-    // global
+    border-spacing: 0px;    
+
     tr {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 20px;        
-        td {            
-            width: 100%;
-            border: none;
-            padding: 0;
-            margin: 0;            
-            display: flex;
-            gap: 10px;            
-        }
-        td.max-content {
-            width: max-content;
-            white-space: nowrap;
-        }
-    }
-
-    thead,
-    tfoot {
-        background-color: var(--bas-6);
         td {
-            font-family: var(--unislab-500);
-            font-size: 14px;
+            border: none;            
+            font-family: var(--unislab-400);            
         }
+    }   
+
+    thead td,
+    tfoot td {
+        background-color: var(--bas-6);
+        font-size: 13px;
+        font-weight: bold;
+        padding: 16px 20px;
     }
 
-    thead tr {
+    thead td,
+    tbody td {
         border-bottom: 1px solid var(--bas-5);
     }
 
-    tbody {
-        tr {
-            background-color: var(--bas-7);
-        }
-        tr:not(:last-child) {
-            border-bottom: 1px solid var(--bas-5);    
-        }       
-        td {
-            font-family: var(--unislab-300);
-            font-size: 14px;            
-        }
+    tbody tr:last-child td {
+        border-bottom: none;
+    }
+    tbody td {        
+        font-weight: bold;
+        font-size: 13px;
+        font-family: var(--unislab-300);
+        background-color: var(--bas-7);
+        padding: 20px;
     }
 
-    tfoot tr {
+    tfoot td {
         border-top: 1px solid var(--bas-5);
-    }    
+    }
 }
 
 .mcp-table.flex {
-    width: 100% !important;
+    width: 100%;
 }
 
 
@@ -995,10 +1009,13 @@
     border: 1px solid var(--bas-4);
     border-radius: 5px;
     padding: 10px;
-    resize: none;
-    font-size: 14px;
+    resize: none;    
     &:focus {
         border-color: var(--bas-3);
+    }
+    &:disabled {
+        background: var(--bas-6);
+        color: var(--bas-3);
     }
 }
 
